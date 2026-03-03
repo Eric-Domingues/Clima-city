@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 2rem;
+    background-color: #575656;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#input-form form{
+    display: flex;
+    width: 100%;
+}
+
+#input-local{
+    flex: 1;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 5px;
+}
+
+#botao-pesquisar {
+    padding: 3px;
+    background-color: rgb(59, 64, 64);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+
+#tempo-info {
+    display: flex;
+    height: 80px;
+}
+
+#tempo-info img {
+    margin-top: 0.9rem;
+    height: 90px;
+}
+
+#tempo-dados {
+    margin-top: 1.5rem;
+    margin-right: 9rem;
+}
+
+#tempo-dados h2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#tempo-dados span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
