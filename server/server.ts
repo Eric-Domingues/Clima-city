@@ -9,8 +9,6 @@ app.use(cors());
 
 const apiKey = process.env.API_KEY;
 
-console.log("API KEY:", process.env.API_KEY);
-
 app.get("/weather", async (req: Request, res: Response) => {
   const city = req.query.city as string;
 
