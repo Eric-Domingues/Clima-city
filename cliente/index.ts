@@ -2,6 +2,22 @@
 const form = document.querySelector("#input-form > form")
 const input: HTMLInputElement | null = document.querySelector("#input-local")
 const sectionTempoInfo = document.querySelector("#tempo-info")
+const themaColor = document.querySelector("#Thema-Button")
+const body = document.querySelector("body") as HTMLBodyElement
+
+let darkThema = false
+
+themaColor?.addEventListener("click",(e)=>{
+    darkThema = !darkThema
+
+    if(darkThema){
+        body.style.backgroundColor = "#2d2c2cff"
+        body.style.color = "rgb(226, 224, 224)"
+    }else{
+        body.style.backgroundColor = "rgb(194, 191, 191)"
+        body.style.color = "rgb(226, 224, 224)"
+    }
+})
 
 form?.addEventListener("submit", async (event) => {
     event.preventDefault();
