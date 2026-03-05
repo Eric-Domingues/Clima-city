@@ -10,6 +10,7 @@ let darkThema = false
 themaColor?.addEventListener("click",(e)=>{
     darkThema = !darkThema
 
+    localStorage.setItem("tema", String(darkThema))
     if(darkThema){
         body.style.backgroundColor = "#2d2c2cff"
         body.style.color = "rgb(226, 224, 224)"
@@ -19,6 +20,15 @@ themaColor?.addEventListener("click",(e)=>{
     }
 })
 
+const temaAtual = localStorage.getItem("tema")
+
+if(temaAtual === "true"){
+    body.style.backgroundColor = "#2d2c2cff"
+    body.style.color = "rgb(226, 224, 224)"
+}else{
+    body.style.backgroundColor = "rgb(194, 191, 191)"
+    body.style.color = "rgb(226, 224, 224)"
+}
 form?.addEventListener("submit", async (event) => {
     event.preventDefault();
 
