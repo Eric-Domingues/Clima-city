@@ -1,9 +1,12 @@
-
 const form = document.querySelector("#input-form > form")
 const input: HTMLInputElement | null = document.querySelector("#input-local")
 const sectionTempoInfo = document.querySelector("#tempo-info")
 const themaColor = document.querySelector("#Thema-Button")
 const body = document.querySelector("body") as HTMLBodyElement
+const DarkImg = "./Images/DarkImg.png"
+const LightImg = "./Images/LightImg.png"
+
+console.log(DarkImg)
 
 let darkThema = false
 
@@ -13,9 +16,11 @@ themaColor?.addEventListener("click",(e)=>{
     localStorage.setItem("tema", String(darkThema))
     if(darkThema){
         body.style.backgroundColor = "#2d2c2cff"
+        body.style.backgroundImage = `url(${DarkImg})`
         body.style.color = "rgb(226, 224, 224)"
     }else{
         body.style.backgroundColor = "rgb(194, 191, 191)"
+        body.style.backgroundImage = `url(${LightImg})`
         body.style.color = "rgb(226, 224, 224)"
     }
 })
@@ -24,9 +29,11 @@ const temaAtual = localStorage.getItem("tema")
 
 if(temaAtual === "true"){
     body.style.backgroundColor = "#2d2c2cff"
+    body.style.backgroundImage = `url(${DarkImg})`
     body.style.color = "rgb(226, 224, 224)"
 }else{
     body.style.backgroundColor = "rgb(194, 191, 191)"
+    body.style.backgroundImage = `url(${LightImg})`
     body.style.color = "rgb(226, 224, 224)"
 }
 form?.addEventListener("submit", async (event) => {

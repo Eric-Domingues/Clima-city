@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,13 +9,22 @@
 body {
     background-color: rgb(194, 191, 191);
     color: rgb(226, 224, 224);
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-main {
-    padding: 2rem;
-    background-color: #575656;
-    border-radius: 1rem;
+main { 
+    height: 220px;
+    background: rgba(108, 189, 255, 0.18);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 18px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 10px;
 }
 
 h1 {
@@ -29,11 +40,19 @@ h1 {
     height: 90vh;
 }
 
-#Thema-Button{
+#Thema-Button{ 
+    color: white;
+    background: rgba(108, 189, 255, 0.18);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 18px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 10px;
     margin-left: 1rem;
     margin-top: 1rem;
     border-radius: 5rem;
-    padding: 5px;
 }
 
 #input-form form{
@@ -52,7 +71,7 @@ h1 {
 
 #botao-pesquisar {
     padding: 3px;
-    background-color: rgb(59, 64, 64);
+    background-color: rgb(26, 28, 28);
     color: white;
     border-radius: 10px;
     cursor: pointer;
